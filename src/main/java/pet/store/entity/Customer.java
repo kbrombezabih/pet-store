@@ -22,7 +22,7 @@ public class Customer {
   private String customerEmail;
   
   @ManyToMany(mappedBy = "customers", cascade = CascadeType.PERSIST)
-  private Set<PetStore> prtStores = new HashSet<>();
+  private Set<PetStore> petStores = new HashSet<>();
   
 
 }
